@@ -897,6 +897,19 @@ Version      : 1.0
     margin-bottom: 18px;
 }
 
+@media only screen and (max-width: 480px) {
+    .hero-content p {
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: var(--main-color);
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0px;
+}
+.hero-content{
+    width: 80%;
+}
+}
 @media only screen and (min-width: 480px) {
     .blog-details-wrap .content h4 {
         font-size: 27px;
