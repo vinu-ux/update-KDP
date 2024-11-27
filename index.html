@@ -31,10 +31,10 @@
 
 <body>
    
-    <div class="progress-wrap cursor-pointer"><i class="ri-arrow-up-s-line"></i><svg class="progress-circle svg-content"
+    <!-- <div class="progress-wrap cursor-pointer"><i class="ri-arrow-up-s-line"></i><svg class="progress-circle svg-content"
             width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg></div>
+        </svg></div> -->
     <header class="main-header">
         <div class="header-upper">
             <div class="container">
@@ -54,11 +54,11 @@
                             </div>
                             <div class="navbar-collapse collapse">
                                 <ul class="navigation clearfix onepage">
-                                    <li><a class="nav-link-click" href="#how">Home</a></li>
-                                    <li><a class="nav-link-click" href="#service">About</a></li>
+                                    <li><a class="nav-link-click" href="#">Home</a></li>
+                                    <li><a class="nav-link-click" href="#about">About</a></li>
                                     <li><a class="nav-link-click" href="#project">Project</a></li>
-                                    <li><a class="nav-link-click" href="#pricing">Team</a></li>
-                                    <li><a class="nav-link-click" href="#faqs">Contact</a></li>
+                                    <li><a class="nav-link-click" href="#pricing">Pricing</a></li>
+                                    <li><a class="nav-link-click" href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -74,9 +74,9 @@
                     <div class="hero-content wow fadeInUp delay-0-2s">
                         <h2>Best Web Development Team</h2>
                         <p>Kerala Digital Park is a premier web development agency committed to helping businesses succeed in the digital world.</p>
-                        <div class="hero-btns"><a href="#pricing" class="theme-btn">See Pricing Plans</a><a href="#book"
+                        <div class="hero-btns"><a  class="theme-btn">See Pricing Plans</a><a  data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 class="theme-btn differenct-color">Book a free call</a></div>
-                        <div class="dot-shape"><img src="assets/images/shapes/shape1.png" alt="Shape"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
             </div>
         </div>
     </div>
-    <section class="funder-says-area">
+    <section id="about" class="funder-says-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -508,7 +508,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="book-call-intro text-center"><img src="assets/images/team/av.png" alt="founder"
                             title="founder">
-                        <h2>Book a 15-minute intro call</h2><a href="#" class="theme-btn">Schedule now<i
+                        <h2>Book a 15-minute intro call</h2><a  data-bs-toggle="modal" data-bs-target="#exampleModal" class="theme-btn">Schedule now<i
                                 class="ri-video-chat-line"></i></a>
                         <p>Prefer to email?<a href="mailto:info@keraladigitalpark.com">info@keraladigitalpark.com</a></p>
                     </div>
@@ -591,7 +591,7 @@ Phone: +91 08069328980 (available during business hours). We aim to respond to a
             </div>
         </div>
     </section>
-	<section id="faqs" class="any-questions-area section-padding">
+	<section id="contact" class="any-questions-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
@@ -697,7 +697,7 @@ Phone: +91 08069328980 (available during business hours). We aim to respond to a
                     <div class="call-to-action-part wow fadeInUp delay-0-2s text-center">
                         <h2>Kerala Digital Park is a leading hub for digital innovation in Kerala, India.</h2>
                         <p>We foster creativity and growth for businesses with world-class infrastructure, cutting-edge technology, and a supportive ecosystem for startups, SMEs, and established enterprises.</p>
-                        <div class="hero-btns"><a href="#" class="theme-btn">Book a free call</a></div><a href="#"><img
+                        <div class="hero-btns"><a  data-bs-toggle="modal" data-bs-target="#exampleModal" class="theme-btn">Book a free call</a></div><a ><img
                                 src="assets/images/logos/logo.png" alt="Logo" title="Logo"></a>
                     </div>
                 </div>
@@ -728,6 +728,72 @@ Phone: +91 08069328980 (available during business hours). We aim to respond to a
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <form id="emailForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enter Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contact2">
+                    <div class="contact2-form p-2" data-aos="zoom-out" data-aos-duration="700">
+                      
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">First Name*</label>
+                              <input type="text" placeholder="First Name" id="mod-first">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">Last Name*</label>
+                              <input type="text" placeholder="Last Name" id="mod-last">
+                            </div>
+                          </div>
+            
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">Email Address*</label>
+                              <input type="email" placeholder="Email" id="mod-email">
+                            </div>
+                          </div>
+            
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">Phone Number*</label>
+                              <input type="number" placeholder="Phone Number" id="mod-phon">
+                            </div>
+                          </div>
+            
+                          <div class="col-lg-12">
+                            <div class="single-input">
+                              <label for="">Message</label>
+                              <textarea rows="3" placeholder="Type your message..." id="mod-message"></textarea>
+                            </div>
+                            
+                          </div>
+            
+            
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a id="modalEmailButton"  data-bs-dismiss="modal" class="btn btn-primary">
+                      Submit Now <span class="arrow"><i class="fa-solid fa-angle-right"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+      </form>
+    </div>
+
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/appear.min.js"></script>
