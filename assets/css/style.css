@@ -435,6 +435,11 @@ html {
     background: white;
   }
 }
+
+.pd-8{
+    padding: 0.8rem !important;
+}
+
 .contact1-section-area .contact-boxarea h3 {
   font-family: 'Figtree', sans-serif;
   font-size: 24px;
@@ -2720,8 +2725,8 @@ ul.extra-skills li i {
 }
 
 .call-to-action-part h2 {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 50px;
+    line-height: 50px;
     margin-bottom: 20px;
     font-weight: 400;
     color: var(--black-color);
