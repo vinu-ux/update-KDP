@@ -647,7 +647,7 @@ video {
 .cmn-btn a {
   position: relative;
   display: inline-block;
-  background-color: #000000;
+  background-color: #f5f2f2;
   border-radius: 5px;
   min-width: 170px;
   font-weight: 700;
@@ -3287,7 +3287,7 @@ footer.error {
 
 .footer-widget p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   color: #E4E4E4;
 }
 
@@ -6074,3 +6074,49 @@ footer.error {
   padding: 10px 30px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.contact2 {
+  background-color: var(--vtc-bg-common-4);
+}
+.contact2 .contact2-form {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 32px 24px;
+}
+.contact2 .contact2-form .single-input {
+  margin-bottom: 20px;
+}
+.contact2 .contact2-form .single-input label {
+  color: var(--01-home-text-colors, #010915);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 100% */
+  padding-bottom: 12px;
+}
+.contact2 .contact2-form .single-input input, .contact2 .contact2-form .single-input textarea {
+  width: 100%;
+  border: 1px solid #E6E6E8;
+  border-radius: 7px;
+  padding: 16px;
+}
+.contact2 .contact2-form .single-input input::-moz-placeholder, .contact2 .contact2-form .single-input textarea::-moz-placeholder {
+  color: var(--01-home-paragraph, rgba(64, 66, 69, 0.7725490196));
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+.contact2 .contact2-form .single-input input::placeholder, .contact2 .contact2-form .single-input textarea::placeholder {
+  color: var(--01-home-paragraph, rgba(64, 66, 69, 0.7725490196));
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+.contact2 .contact2-form .single-input input:focus, .contact2 .contact2-form .single-input textarea:focus {
+  outline: none;
+}
+.contact2 .heading2 {
+  padding-left: 30px;
+}
