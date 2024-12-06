@@ -6130,3 +6130,37 @@ footer.error {
 .contact2 .heading2 {
   padding-left: 30px;
 }
+
+.vid-lay{
+  width: 190px;
+    height: 334px;
+    border-radius: 11px 5px 10px 15px;
+}
+@media only screen and (min-width: 468px) and (max-width: 767px){
+  .vid-lay {
+    width: 50%;
+    height: auto;
+  }
+  .banner-2:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    opacity: 0.5;
+    border-radius: 20px 5px 10px 15px;
+}
+}
+@media (max-width: 468px) {
+  .vid-lay {
+    width: 75%;
+    height: auto;
+  }
+  .banner-2:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 75%;
+    opacity: 0.5;
+    border-radius: 20px 5px 10px 15px;
+}
+}
