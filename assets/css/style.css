@@ -2929,7 +2929,6 @@ header {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #0B192C;
   border-radius: 10px 10px 0px 0px;
   visibility: hidden;
   opacity: 0;
@@ -6152,7 +6151,7 @@ footer.error {
 }
 @media only screen and (min-width: 468px) and (max-width: 767px){
   .vid-lay {
-    width: 50%;
+    width: 80%;
     height: auto;
   }
   .banner-2:before {
@@ -6176,7 +6175,7 @@ footer.error {
 }
 @media (max-width: 468px) {
   .vid-lay {
-    width: 75%;
+    width: 90%;
     height: auto;
   }
   .banner-2:before {
