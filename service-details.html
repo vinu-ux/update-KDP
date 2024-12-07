@@ -34,49 +34,79 @@
     <header class="header-area position_top">
         <div class="site-logo">
             <div class="logo">
-                <a href="/index"><img src="assets/img/logo/logo.png" alt="image"></a>
+                <a href="index.html"><img src="assets/img/logo.svg" alt="image"></a>
             </div>
         </div>
         <div class="main-menu">
             <nav class="main-nav">
                 <div class="mobile-menu-logo">
-                    <a href="/index"><img src="assets/img/logo/dark.png" alt=""></a>
+                    <a href="index.html"><img src="assets/img/logo-dark.svg" alt=""></a>
                     <div class="remove">
                         <i class="bi bi-plus-lg"></i>
                     </div>
                 </div>
                 <ul>
                     <li class="has-child active">
-                        <a href="/index">Home</a>
+                        <a href="index.html">Home</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home 01</a></li>
+                            <li><a href="index2.html">Home 02</a></li>
+                        </ul>
                     </li>
-                    <li><a href="/about">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li>
-                        <a href="/service">Service</a>
+                        <a href="service.html">Service</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Service</a></li>
+                            <li><a href="services.html">Service Details</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="/project">Project</a>
+                        <a href="project.html">Project</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="project.html">Project</a></li>
+                            <li><a href="project.html">Project Details</a></li>
+                        </ul>
                     </li>
                     <li class="has-child">
-                        <a href="/blog">Blog</a>
+                        <a href="blog.html">Blog</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-standard.html">Blog standard</a></li>
+                            <li><a href="/blog-details">Blog Details</a></li>
+                        </ul>
                     </li>
-                    
-                    <li><a href="/contact">Contact Us</a></li>
+                    <li class="has-child">
+                        <a href="#">Pages</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="error.html">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="get-qoute d-flex justify-content-center d-lg-none d-block pt-50">
                     <div class="cmn-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-                        <a >Get A Quote</a>
+                        <a href="contact.html">Get A Quote</a>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="nav-right">
             <div class="get-qoute">
-                <div class="cmn-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="cmn-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="line-1"></div>
                     <div class="line-2"></div>
-                    <a >Get A Quote</a>
+                    <a href="contact.html">Get A Quote</a>
                 </div>
             </div>
             <div class="mobile-menu">
@@ -87,7 +117,6 @@
                 </a>
             </div>
         </div>
-        
     </header>
     <!-- End header section -->
 
@@ -108,11 +137,17 @@
         <section class="breadcrumbs">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-12">
                         <div class="breadcrumb-wrapper">
                             <div class="breadcrumb-cnt">
-                                <h1>Blog</h1>
-                                <span class="d-flex justify-content-center"><a href="/index">Home</a><i class="bi bi-arrow-right"></i>Blog sidebar</span>
+                                <h1>Service Details</h1>
+                                <span><a href="index.html">Home</a><i class="bi bi-arrow-right"></i>Service Details</span>
+                                <div class="breadcrumb-video">
+                                    <img src="assets/img/breadcrumb-video.jpg" alt="">
+                                    <div class="video-inner">
+                                        <a class="video-popup" href="https://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fas fa-play"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,95 +156,92 @@
         </section>
         <!-- End breadcrumbs section -->
 
-        <!-- Start blog-grid section -->
-        <section class="blog-grid sec-mar-top">
+        <!-- Start service-details section -->
+        <section class="service-details sec-mar-top">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-8">
+                        <div class="service-details-content">
+                            <img src="assets/img/blog/blog-thumnail.jpg" alt="">
+                            <h3><i><img src="assets/img/icons/service-details-icon.png" alt=""></i>Software Development</h3>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, pellentesque risus. Vivamus vehicula nlpurus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibus felis, ut egestas lacus. Sedanpellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis faucibus il</p>
+                            <p>ut, hendrerit vel tortor. In pharetra lectus luctus ornare sollicitudin. Pellentesque at neque nec justo sokal porttitor egestas nec eget ex.Etiam suscipit neque elit, hendrerit laoreet quam ultrices id. Proin nec tolde lacinia ligula, sed laoreet ex. Sed nisl ligula, euismod vel justo scelerisque,</p>
+                            <p>vestibulum ultricies tellus. volv Pellentesque vel turpis vitae urna tincidunt hendrerit at ut est. Sed eget feugiat felis. Integer sed ornare sem, eget porttitor nisi. Nunc erat sapien, porta laoreet gravida ac, </p>
+                        </div>
+                    </div>
                     <div class="col-lg-4">
-                      
                         <div class="sidebar-widget">
                             <h4>Category</h4>
                             <ul class="category">
-                                <li><a href="/project">Website<i class="bi bi-arrow-right"></i></a></li>
-                                <li><a href="/project">Development<i class="bi bi-arrow-right"></i></a></li>
+                                <li><a href="project.html">Web Design<i class="bi bi-arrow-right"></i></a></li>
+                                <li><a href="project.html">Apps Development<i class="bi bi-arrow-right"></i></a></li>
+                                <li><a href="project.html">Software Development<i class="bi bi-arrow-right"></i></a></li>
+                                <li><a href="project.html">Motion Graphics<i class="bi bi-arrow-right"></i></a></li>
+                                <li><a href="project.html">UI/UX Design<i class="bi bi-arrow-right"></i></a></li>
+                                <li><a href="project.html">Graphic Design<i class="bi bi-arrow-right"></i></a></li>
                             </ul>
                         </div>
-                        <div class="sidebar-widget">
-                            <h4>Newest Post</h4>
-                            <div class="recent-post">
-                                <div class="recent-thumb">
-                                    <a href="/blog-details"><img src="assets/img/blog/blog-1.webp" alt=""></a>
-                                </div>
-                                <div class="recent-post-cnt">
-                                    <span>11.12.24</span>
-                                    <h5><a href="/blog-details">Kerala leading website development</a></h5>
-                                </div>
+                        <div class="sidebar-banner">
+                            <img src="assets/img/widget-banner-bg.jpg" alt="">
+                            <div class="banner-inner">
+                                <h3>Any Project <span>Call Now.</span>
+                                    <img class="angle" src="assets/img/arrow-angle.png" alt="">
+                                </h3>
+                                <a href="tel:11231231234">+1-123-123-1234</a>
                             </div>
-                            <div class="recent-post">
-                                <div class="recent-thumb">
-                                    <a href="/blog-details2"><img src="assets/img/blog/blog-2.webp" alt=""></a>
-                                </div>
-                                <div class="recent-post-cnt">
-                                    <span>30.10.2024</span>
-                                    <h5><a href="/blog-details2">Different type websites</a></h5>
-                                </div>
-                            </div>
-                            
                         </div>
-                        <div class="sidebar-widget">
-                            <h4>Post Tag</h4>
-                            <ul class="tag-list">
-                                <li><a href="/project">Website</a></li>
-                                <li><a href="/project">Development</a></li>
-                            </ul>
-                        </div>
-                        
                     </div>
-                    <div class="col-lg-8">
-                        <div class="blog-item-grid">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="single-blog">
-                                        <div class="blog-thumb">
-                                            <a href="/blog-details"><img src="assets/img/blog/blog-1.webp" alt=""></a>
-                                            <div class="tag">
-                                                <a href="/project">Development</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog-inner">
-                                            <div class="author-date">
-                                                <a href="#">By, Admin</a>
-                                                <a href="#">23.02.2024</a>
-                                            </div>
-                                            <h4><a href="/blog-details">Kerala leading website development</a></h4>
-                                        </div>
-                                    </div>
+                </div>
+                <div class="service-items sec-mar-top">
+                    <div class="service-details-item">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="single-details">
+                                    <h4><span>01</span>Brainstroming & Wirefarme</h4>
+                                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona vestibulum ultricies tellus. volv Pellentesque vel tu neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, tourbakaniv pellentesque risus. Vivamus vehicula nl hendrerit vel tortor. In pharetra lectus purus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibuson felis, ut egestas lacus. Sedan pellentesque quis magna eu vestibulum. Olangb pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis faucibus il</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="single-blog">
-                                        <div class="blog-thumb">
-                                            <a href="/blog-details2"><img src="assets/img/blog/blog-2.webp" alt=""></a>
-                                            <div class="tag">
-                                                <a href="/project">Website</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog-inner">
-                                            <div class="author-date">
-                                                <a href="#">By, Admin</a>
-                                                <a href="#">12.02.2024</a>
-                                            </div>
-                                            <h4><a href="/blog-details2">Different type websites</a></h4>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="single-details-thumb">
+                                    <img src="assets/img/blog/thumb-1.jpg" alt="">
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
+                    <div class="service-details-item">
+                        <div class="row">
+                            <div class="col-lg-6 or-2">
+                                <div class="single-details-thumb">
+                                    <img src="assets/img/blog/thumb-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="single-details">
+                                    <h4><span>02</span>UI Design</h4>
+                                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona vestibulum ultricies tellus. volv Pellentesque vel tu neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, tourbakaniv pellentesque risus. Vivamus vehicula nl hendrerit vel tortor. In pharetra lectus purus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibuson felis, ut egestas lacus. Sedan pellentesque quis magna eu vestibulum. Olangb pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis faucibus il</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-details-item">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="single-details">
+                                    <h4><span>03</span>Final Developing</h4>
+                                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam eu nibh elementum, accumsan ona vestibulum ultricies tellus. volv Pellentesque vel tu neque ac, aliquet nunc. In eu ipsum fringilla, accumsan purus vel, tourbakaniv pellentesque risus. Vivamus vehicula nl hendrerit vel tortor. In pharetra lectus purus at eros interdum, in dignissim nulla vestibulum. Nunc sit amet finibuson felis, ut egestas lacus. Sedan pellentesque quis magna eu vestibulum. Olangb pellentesque quis magna eu vestibulum. Ut sed commodo neque. Morbi erat nisi, vehicula quis faucibus il</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="single-details-thumb">
+                                    <img src="assets/img/blog/thumb-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End blog-grid section -->
+        <!-- End service-details section -->
 
         <!-- Start subscribe-newsletter section -->
         <section class="subscribe-newsletter sec-mar-top">
@@ -240,7 +272,7 @@
     </main>
     <!-- End creasoft-wrap section -->
 
-    <!-- Start section -->
+    <!-- Start footer section -->
     <footer>
         <div class="container">
             <div class="footer-top">
@@ -248,9 +280,9 @@
                     <div class="col-md-3 col-lg-3 col-xl-3">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="/index"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
                             </div>
-                            <p>Kerala Digital Park is a leading hub for digital innovation in Kerala, India. We foster creativity and growth for businesses with world-class infrastructure, cutting-edge technology, and a supportive ecosystem for startups, SMEs, and established enterprises.</p>
+                            <p>Integer purus odio, placerat nec ande rhoncus in, ullamcorper nec dolor. on aptent taciti sociosqu.</p>
                             <ul class="social-media-icons">
                                 <li><a href="https://www.facebook.com/profile.php?id=61562538486903"><i class="fab fa-facebook-f"></i></a></li>
                                 
@@ -263,10 +295,12 @@
                         <div class="footer-widget">
                             <h4>Our Services</h4>
                             <ul class="footer-menu">
-                                <li><a href="services.html">Static Website</a></li>
-                                    <li><a href="services.html">Dynamic Website</a></li>
-                                    <li><a href="services.html">Ecommers Website</a></li>
-                                    <li><a href="services.html">Custom Website</a></li>
+                                <li><a href="services.html">Strategy &amp; Research</a></li>
+                                <li><a href="services.html">Web Development</a></li>
+                                <li><a href="services.html">Web Solution</a></li>
+                                <li><a href="services.html">Digital Merketing</a></li>
+                                <li><a href="services.html">App Design</a></li>
+                                <li><a href="services.html">App Development</a></li>
                             </ul>
                         </div>
                     </div>
@@ -274,10 +308,10 @@
                         <div class="footer-widget">
                             <h4>Quick Links</h4>
                             <ul class="footer-menu">
-                                <li><a href="/about">About Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="/project">Project</a></li>
-                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="project.html">Project</a></li>
+                                <li><a href="blog.html">Blog</a></li>
                                 
                                 <li><a href="services.html">Pricing Plan</a></li>
                             </ul>
@@ -291,7 +325,8 @@
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div class="phone">
-                                    <a href="tel:05661111985">+91 08069328980</a>
+                                    <a href="tel:05661111985">+880 566 1111 985</a>
+                                    <a href="tel:06571111576">+880 657 1111 576</a>
                                 </div>
                             </div>
                             <div class="office-mail">
@@ -299,7 +334,8 @@
                                     <i class="far fa-envelope"></i>
                                 </div>
                                 <div class="email">
-                                    <a href="tell:info@example.com"><span class="__cf_email__" >info@keraladigitalpark.com</span></a>
+                                    <a href="tell:info@example.com"><span class="__cf_email__" data-cfemail="61080f070e210419000c110d044f020e0c">[email&#160;protected]</span></a>
+                                    <a href="tell:info@support.com"><span class="__cf_email__" data-cfemail="96fff8f0f9d6e5e3e6e6f9e4e2b8f5f9fb">[email&#160;protected]</span></a>
                                 </div>
                             </div>
                             <div class="address">
@@ -316,7 +352,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-4 col-lg-4 col-xl-5">
                         <div class="copy-txt">
-                            <span>Copyright 2024 <a href="#">KERALA DIGITAL PARK.</a>All rights reserved</span>
+                            <span>Copyright 2024 <b>Crea soft</b> | Design By <a href="#">Egens Theme</a></span>
                         </div>
                     </div>
                     <div class="col-12 col-md-8 col-lg-8 col-xl-7">
@@ -329,7 +365,7 @@
             </div>
         </div>
     </footer>
-    <!-- End section -->
+    <!-- End footer section -->
 
 
     <!--cursor design-->

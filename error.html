@@ -34,49 +34,79 @@
     <header class="header-area position_top">
         <div class="site-logo">
             <div class="logo">
-                <a href="/index"><img src="assets/img/logo/logo.png" alt="image"></a>
+                <a href="index.html"><img src="assets/img/logo.svg" alt="image"></a>
             </div>
         </div>
         <div class="main-menu">
             <nav class="main-nav">
                 <div class="mobile-menu-logo">
-                    <a href="/index"><img src="assets/img/logo/dark.png" alt=""></a>
+                    <a href="index.html"><img src="assets/img/logo-dark.svg" alt=""></a>
                     <div class="remove">
                         <i class="bi bi-plus-lg"></i>
                     </div>
                 </div>
                 <ul>
                     <li class="has-child active">
-                        <a href="/index">Home</a>
+                        <a href="index.html">Home</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home 01</a></li>
+                            <li><a href="index2.html">Home 02</a></li>
+                        </ul>
                     </li>
-                    <li><a href="/about">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li>
-                        <a href="/service">Service</a>
+                        <a href="service.html">Service</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="service.html">Service</a></li>
+                            <li><a href="services.html">Service Details</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="/project">Project</a>
+                        <a href="project.html">Project</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="project.html">Project</a></li>
+                            <li><a href="project.html">Project Details</a></li>
+                        </ul>
                     </li>
                     <li class="has-child">
-                        <a href="/blog">Blog</a>
+                        <a href="blog.html">Blog</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-standard.html">Blog standard</a></li>
+                            <li><a href="/blog-details">Blog Details</a></li>
+                        </ul>
                     </li>
-                    
-                    <li><a href="/contact">Contact Us</a></li>
+                    <li class="has-child">
+                        <a href="#">Pages</a>
+                        <i class="bi bi-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="error.html">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="get-qoute d-flex justify-content-center d-lg-none d-block pt-50">
                     <div class="cmn-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="line-1"></div>
                         <div class="line-2"></div>
-                        <a >Get A Quote</a>
+                        <a href="contact.html">Get A Quote</a>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="nav-right">
             <div class="get-qoute">
-                <div class="cmn-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="cmn-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="line-1"></div>
                     <div class="line-2"></div>
-                    <a >Get A Quote</a>
+                    <a href="contact.html">Get A Quote</a>
                 </div>
             </div>
             <div class="mobile-menu">
@@ -87,7 +117,6 @@
                 </a>
             </div>
         </div>
-        
     </header>
     <!-- End header section -->
 
@@ -108,11 +137,17 @@
         <section class="breadcrumbs">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-12">
                         <div class="breadcrumb-wrapper">
                             <div class="breadcrumb-cnt">
-                                <h1>Blog</h1>
-                                <span class="d-flex justify-content-center"><a href="/index">Home</a><i class="bi bi-arrow-right"></i>Blog sidebar</span>
+                                <h1>Error</h1>
+                                <span><a href="index.html">Home</a><i class="bi bi-arrow-right"></i>Error</span>
+                                <div class="breadcrumb-video">
+                                    <img src="assets/img/breadcrumb-video.jpg" alt="">
+                                    <div class="video-inner">
+                                        <a class="video-popup" href="https://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fas fa-play"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,136 +156,39 @@
         </section>
         <!-- End breadcrumbs section -->
 
-        <!-- Start blog-grid section -->
-        <section class="blog-grid sec-mar-top">
+        <!-- Start back-to-home section -->
+        <section class="back-to-home sec-pad">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                      
-                        <div class="sidebar-widget">
-                            <h4>Category</h4>
-                            <ul class="category">
-                                <li><a href="/project">Website<i class="bi bi-arrow-right"></i></a></li>
-                                <li><a href="/project">Development<i class="bi bi-arrow-right"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-widget">
-                            <h4>Newest Post</h4>
-                            <div class="recent-post">
-                                <div class="recent-thumb">
-                                    <a href="/blog-details"><img src="assets/img/blog/blog-1.webp" alt=""></a>
-                                </div>
-                                <div class="recent-post-cnt">
-                                    <span>11.12.24</span>
-                                    <h5><a href="/blog-details">Kerala leading website development</a></h5>
-                                </div>
-                            </div>
-                            <div class="recent-post">
-                                <div class="recent-thumb">
-                                    <a href="/blog-details2"><img src="assets/img/blog/blog-2.webp" alt=""></a>
-                                </div>
-                                <div class="recent-post-cnt">
-                                    <span>30.10.2024</span>
-                                    <h5><a href="/blog-details2">Different type websites</a></h5>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="sidebar-widget">
-                            <h4>Post Tag</h4>
-                            <ul class="tag-list">
-                                <li><a href="/project">Website</a></li>
-                                <li><a href="/project">Development</a></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="blog-item-grid">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="single-blog">
-                                        <div class="blog-thumb">
-                                            <a href="/blog-details"><img src="assets/img/blog/blog-1.webp" alt=""></a>
-                                            <div class="tag">
-                                                <a href="/project">Development</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog-inner">
-                                            <div class="author-date">
-                                                <a href="#">By, Admin</a>
-                                                <a href="#">23.02.2024</a>
-                                            </div>
-                                            <h4><a href="/blog-details">Kerala leading website development</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="single-blog">
-                                        <div class="blog-thumb">
-                                            <a href="/blog-details2"><img src="assets/img/blog/blog-2.webp" alt=""></a>
-                                            <div class="tag">
-                                                <a href="/project">Website</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog-inner">
-                                            <div class="author-date">
-                                                <a href="#">By, Admin</a>
-                                                <a href="#">12.02.2024</a>
-                                            </div>
-                                            <h4><a href="/blog-details2">Different type websites</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End blog-grid section -->
-
-        <!-- Start subscribe-newsletter section -->
-        <section class="subscribe-newsletter sec-mar-top">
-            <div class="container">
-                <div class="news-letter-content">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="subscribe-cnt">
-                                <span>Get In Touch</span>
-                                <h3>Subscribe Our</h3>
-                                <strong>Newsletter</strong>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow animate fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="subscribe-form">
-                                <form action="#" method="post">
-                                    <input type="email" name="email" placeholder="Type Your Email" id="ft-email">
-                                    <input type="submit" value="connect" id="footerEmailButton">
-                                </form>
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="error-wrapper">
+                            <img src="assets/img/404.png" alt="">
+                            <h3>Sorry We Can't Find That Page!</h3>
+                            <p>Donec bibendum enim ut elit porta ullamcorper. Vestibulum Nai quam nulla, venenatis eget dapibus ac, catali topuny wekemdini iaculis vitae nulla. Morbi mattis nec mi ac mollis. </p>
+                            <div class="home-btn">
+                                <a href="index.html"><i class="bi bi-house-door"></i>Back To Home</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End subscribe-newsletter section -->
+        <!-- End back-to-home section -->
 
     </main>
     <!-- End creasoft-wrap section -->
 
-    <!-- Start section -->
-    <footer>
+    <!-- Start footer section -->
+    <footer class="error">
         <div class="container">
             <div class="footer-top">
                 <div class="row">
                     <div class="col-md-3 col-lg-3 col-xl-3">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="/index"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
                             </div>
-                            <p>Kerala Digital Park is a leading hub for digital innovation in Kerala, India. We foster creativity and growth for businesses with world-class infrastructure, cutting-edge technology, and a supportive ecosystem for startups, SMEs, and established enterprises.</p>
+                            <p>Integer purus odio, placerat nec ande rhoncus in, ullamcorper nec dolor. on aptent taciti sociosqu.</p>
                             <ul class="social-media-icons">
                                 <li><a href="https://www.facebook.com/profile.php?id=61562538486903"><i class="fab fa-facebook-f"></i></a></li>
                                 
@@ -274,10 +212,10 @@
                         <div class="footer-widget">
                             <h4>Quick Links</h4>
                             <ul class="footer-menu">
-                                <li><a href="/about">About Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="/project">Project</a></li>
-                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="project.html">Project</a></li>
+                                <li><a href="blog.html">Blog</a></li>
                                 
                                 <li><a href="services.html">Pricing Plan</a></li>
                             </ul>
@@ -291,7 +229,8 @@
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
                                 <div class="phone">
-                                    <a href="tel:05661111985">+91 08069328980</a>
+                                    <a href="tel:05661111985">+880 566 1111 985</a>
+                                    <a href="tel:06571111576">+880 657 1111 576</a>
                                 </div>
                             </div>
                             <div class="office-mail">
@@ -299,7 +238,8 @@
                                     <i class="far fa-envelope"></i>
                                 </div>
                                 <div class="email">
-                                    <a href="tell:info@example.com"><span class="__cf_email__" >info@keraladigitalpark.com</span></a>
+                                    <a href="tell:info@example.com"><span class="__cf_email__" data-cfemail="93fafdf5fcd3f6ebf2fee3fff6bdf0fcfe">[email&#160;protected]</span></a>
+                                    <a href="tell:info@support.com"><span class="__cf_email__" data-cfemail="cfa6a1a9a08fbcbabfbfa0bdbbe1aca0a2">[email&#160;protected]</span></a>
                                 </div>
                             </div>
                             <div class="address">
@@ -316,7 +256,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-4 col-lg-4 col-xl-5">
                         <div class="copy-txt">
-                            <span>Copyright 2024 <a href="#">KERALA DIGITAL PARK.</a>All rights reserved</span>
+                            <span>Copyright 2024 <b>Crea soft</b> | Design By <a href="#">Egens Theme</a></span>
                         </div>
                     </div>
                     <div class="col-12 col-md-8 col-lg-8 col-xl-7">
@@ -329,7 +269,7 @@
             </div>
         </div>
     </footer>
-    <!-- End section -->
+    <!-- End footer section -->
 
 
     <!--cursor design-->
