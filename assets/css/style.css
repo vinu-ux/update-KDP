@@ -447,7 +447,7 @@ video {
 
 .breadcrumbs {
   position: relative;
-  height: 480px;
+  height: 320px;
   background-image: url(../img/breadcrumb-bg.jpg);
   background-size: cover;
   background-position: center center;
@@ -483,7 +483,7 @@ video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 480px;
+  height: 370px;
 }
 
 @media (max-width: 767px) {
@@ -498,6 +498,13 @@ video {
 
 .breadcrumb-cnt h1 {
   font-size: 60px;
+  font-weight: 700;
+  color: #3FA2F6;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.breadcrumb-cnt h3 {
+  font-size: 40px;
   font-weight: 700;
   color: #3FA2F6;
   text-transform: capitalize;
@@ -1907,17 +1914,23 @@ header {
 
 .banner-1 {
   position: relative;
+  text-align: center;
+  display: flex;
+    justify-content: center;
   border-radius: 40px 10px 10px 10px;
 }
 
 @media (max-width: 767px) {
   .banner-1 {
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
   }
 }
 
 .banner-1 img {
   width: 100%;
+  height: 100%;
   border-radius: 40px 10px 10px 10px;
 }
 
@@ -1932,7 +1945,6 @@ header {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #0A0A0A;
   opacity: 0.5;
   border-radius: 40px 10px 10px 10px;
 }
@@ -6132,8 +6144,10 @@ footer.error {
 }
 
 .vid-lay{
-  width: 190px;
-    height: 334px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 300px;
+    height: 450px;
     border-radius: 11px 5px 10px 15px;
 }
 @media only screen and (min-width: 468px) and (max-width: 767px){
@@ -6150,10 +6164,14 @@ footer.error {
     border-radius: 20px 5px 10px 15px;
 }
 }
+.cent-sty{
+  display: flex !important;
+  justify-content: center !important;
+}
 @media (max-width: 767px) {
   .cent-sty{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 @media (max-width: 468px) {
@@ -6169,4 +6187,39 @@ footer.error {
     opacity: 0.5;
     border-radius: 20px 5px 10px 15px;
 }
+}
+
+.video {
+  display: none; /* Initially hide the video */
+}
+
+.thumbnail {
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 300px;
+    height: 450px;
+    border-radius: 11px 5px 10px 15px;
+  cursor: pointer;
+}
+
+.thumbnail i {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  border: 2px dashed #fff;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  color: #3fa2f6;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  border-radius: 50%;
+  font-size: 20px;
+  -webkit-animation-name: ripple;
+          animation-name: ripple;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
