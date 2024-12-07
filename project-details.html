@@ -68,7 +68,7 @@
                         <i class="bi bi-chevron-down"></i>
                         <ul class="sub-menu">
                             <li><a href="project.html">Project</a></li>
-                            <li><a href="project-details.html">Project Details</a></li>
+                            <li><a href="project.html">Project Details</a></li>
                         </ul>
                     </li>
                     <li class="has-child">
@@ -93,7 +93,7 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="get-qoute d-flex justify-content-center d-lg-none d-block pt-50">
-                    <div class="cmn-btn">
+                    <div class="cmn-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="line-1"></div>
                         <div class="line-2"></div>
                         <a href="contact.html">Get A Quote</a>
@@ -103,7 +103,7 @@
         </div>
         <div class="nav-right">
             <div class="get-qoute">
-                <div class="cmn-btn">
+                <div class="cmn-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="line-1"></div>
                     <div class="line-2"></div>
                     <a href="contact.html">Get A Quote</a>
@@ -165,7 +165,7 @@
                             <div class="project-thumb">
                                 <img src="assets/img/project/thumbnail-project.jpg" alt="">
                                 <div class="tag">
-                                    <a href="project-details.html">Software</a>
+                                    <a href="project.html">Software</a>
                                 </div>
                             </div>
                             <h3>Desktop Mockup</h3>
@@ -295,13 +295,13 @@
                                 <div class="swiper-slide">
                                     <div class="single-item">
                                         <div class="item-img">
-                                            <a href="project-details.html"><img src="assets/img/project/project-1.jpg" alt=""></a>
+                                            <a href="project.html"><img src="assets/img/project/project-1.jpg" alt=""></a>
                                         </div>
                                         <div class="item-inner-cnt">
                                             <span>Software</span>
                                             <h4>Desktop Mockup</h4>
                                             <div class="view-btn">
-                                                <a href="project-details.html">view details</a>
+                                                <a href="project.html">view details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -309,13 +309,13 @@
                                 <div class="swiper-slide">
                                     <div class="single-item">
                                         <div class="item-img">
-                                            <a href="project-details.html"><img src="assets/img/project/project-2.jpg" alt=""></a>
+                                            <a href="project.html"><img src="assets/img/project/project-2.jpg" alt=""></a>
                                         </div>
                                         <div class="item-inner-cnt">
                                             <span>Template</span>
                                             <h4>Creative Agency</h4>
                                             <div class="view-btn">
-                                                <a href="project-details.html">view details</a>
+                                                <a href="project.html">view details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -323,13 +323,13 @@
                                 <div class="swiper-slide">
                                     <div class="single-item">
                                         <div class="item-img">
-                                            <a href="project-details.html"><img src="assets/img/project/project-3.jpg" alt=""></a>
+                                            <a href="project.html"><img src="assets/img/project/project-3.jpg" alt=""></a>
                                         </div>
                                         <div class="item-inner-cnt">
                                             <span>App</span>
                                             <h4>Mobile Crypto Wallet</h4>
                                             <div class="view-btn">
-                                                <a href="project-details.html">view details</a>
+                                                <a href="project.html">view details</a>
                                             </div>
                                         </div>
                                     </div>
@@ -357,8 +357,8 @@
                         <div class="col-lg-6 wow animate fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="subscribe-form">
                                 <form action="#" method="post">
-                                    <input type="email" name="email" placeholder="Type Your Email">
-                                    <input type="submit" value="connect">
+                                    <input type="email" name="email" placeholder="Type Your Email" id="ft-email">
+                                    <input type="submit" value="connect" id="footerEmailButton">
                                 </form>
                             </div>
                         </div>
@@ -469,7 +469,70 @@
     
     <!--cursor design-->
 
-    <!--  Main jQuery  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <form id="emailForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enter Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contact2">
+                    <div class="contact2-form p-2" data-aos="zoom-out" data-aos-duration="700">
+                      
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">First Name*</label>
+                              <input type="text" placeholder="First Name" id="mod-first">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">Last Name*</label>
+                              <input type="text" placeholder="Last Name" id="mod-last">
+                            </div>
+                          </div>
+            
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">Email Address*</label>
+                              <input type="email" placeholder="Email" id="mod-email">
+                            </div>
+                          </div>
+            
+                          <div class="col-lg-6">
+                            <div class="single-input">
+                              <label for="">Phone Number*</label>
+                              <input type="number" placeholder="Phone Number" id="mod-phon">
+                            </div>
+                          </div>
+            
+                          <div class="col-lg-12">
+                            <div class="single-input">
+                              <label for="">Message</label>
+                              <textarea rows="3" placeholder="Type your message..." id="mod-message"></textarea>
+                            </div>
+                            
+                          </div>
+            
+            
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a id="modalEmailButton" onclick="modalEmail()" data-bs-dismiss="modal" class="btn btn-primary">
+                      Submit Now 
+                      </a>
+                </div>
+            </div>
+        </div>
+      </form>
+    </div>
     <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Popper and Bootstrap JS -->
     <script src="assets/js/popper.min.js"></script>
@@ -488,6 +551,7 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/contact.js"></script>
 
 </body>
 
