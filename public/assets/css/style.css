@@ -2445,7 +2445,7 @@ header {
 .price-box h3 {
   position: relative;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   color: #17161A;
   margin-bottom: 30px;
   -webkit-transition: all 0.5s ease-out 0s;
@@ -2476,7 +2476,7 @@ header {
 
 .price-box strong {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 30px;
   color: #17161A;
   display: block;
   margin: 20px 0;
@@ -2484,7 +2484,12 @@ header {
   transition: all 0.5s ease-out 0s;
 }
 
+.sty-padd{
+  padding: 5px;
+}
+
 .price-box strong sub {
+  display: block;
   color: #3FA2F6;
   font-size: 16px;
   font-weight: 400;
@@ -2523,6 +2528,11 @@ header {
   -webkit-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
 }
+.price-box:hover .item-list-sep li {
+  color: #E4E4E4;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
 
 .price-box:hover .price-btn a {
   color: #000;
@@ -2533,6 +2543,12 @@ header {
   font-size: 16px;
   color: #17161A;
   margin-bottom: 15px;
+}
+
+.item-list-sep li{
+  font-size: 16px;
+  color: #17161A;
+  margin-bottom: 10px;
 }
 
 .item-list li:last-child {
