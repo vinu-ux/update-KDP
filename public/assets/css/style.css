@@ -6238,3 +6238,28 @@ footer.error {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+
+.sty-5-team{
+  min-height: 8.5rem;
+}
+.sty-6-team{
+  min-height: 7.1rem;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1400px){
+  .sty-5-team{
+    min-height: 7.5rem;
+  }
+  .sty-6-team{
+    min-height: 6.5rem;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px){
+  .sty-5-team{
+    min-height: 7.5rem;
+  }
+  .sty-6-team{
+    min-height: 6.8rem;
+  }
+}
+
